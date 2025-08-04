@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    font-family: "Ubuntu", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+body{
+    background-color: hwb(204 0% 69%);
+    display: flex;
+}
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+.img-box img{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+h2{
+    font-size: 50px;
+}
+.menu{
+    background-color: rgba(33, 73, 126, 0.856);
+    width: 50px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.menu:hover{
+    width: 300px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    transition: 0.5 ease-in-out;
+}
+ul li a:hover, .active,.data-info .box:hover{
+    background-color: rgba(63, 153, 255, 0.219);
+}
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.log-out a{
+    background-color: #a00;
+}
+.log-out a:hover{
+    background-color: rgb(129, 2, 2);
+}
+ul li a i{
+    zoom:160%;
+}
+ul li a p{
+    font-size: 20px;
+}
+.content{
+    width: 100%;
+    margin: 10px;
+}
+.titele-info{
+    background-color: #a00;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data-info .box{
+    background-color: rgba(5, 75, 167, 0.76);
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box i{
+    zoom: 400%;
+}
+.box p{
+    font-size: 20px;
+}
+.box span{
+    font-size: 40px;
+}
